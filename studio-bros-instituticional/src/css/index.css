@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Raleway";
+
+    background-color: white;
+  }
+
+.main-background{
+
+  background-image: url('../img/studio-bros-wallpaper.webp'); /* Ensure the path is correct */
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center  center; /* Centers the image */
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full viewport width */
+  background-repeat: no-repeat;
+
+
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #182848; 
+}
+
+
+
