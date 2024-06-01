@@ -24,7 +24,7 @@ function App() {
                 <h1 id='about-us' className='pt-40 mb-8 text-center font-bold text-4xl'>About Us</h1>
 
                 {/* First Paragraph */}
-                <div className='flex  justify-center h-[400px]'>
+                <div className='flex  justify-center  h-[400px]'>
                   <div className=' flex items-stretch w-2/3'>
                     <div className='w-1/2 flex flex-col justify-center p-8'>
                       <p className="text-justify">
@@ -45,7 +45,7 @@ function App() {
                 </div>
 
                {/*Second Paragraph*/}
-               <div className='flex  justify-center h-[400px]'>
+               <div className='flex justify-center h-[400px]'>
                 <div className=' flex items-stretch w-2/3'>
                 <div className='w-1/2 p-8 flex items-center'>
                     <img src={Nunex}  className="object-cover  h-full w-full drop-shadow-xl" alt="Nunex"></img>

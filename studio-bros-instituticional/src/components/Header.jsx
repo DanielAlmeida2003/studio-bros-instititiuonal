@@ -176,18 +176,21 @@ export default function Header() {
                   <div className="space-y-2 py-6">
 
                     <a
+                      onClick={() => setMobileMenuOpen(false)}
                       href="#about-us"
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       About Us
                     </a>
                     <a
+                      onClick={() => setMobileMenuOpen(false)}
                       href="#"
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       Music
                     </a>
                     <a
+                      onClick={() => setMobileMenuOpen(false)}
                       href="#"
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
@@ -195,12 +198,14 @@ export default function Header() {
                     </a>
                     <a
                       href="#"
+                      onClick={() => setMobileMenuOpen(false)}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       Podcast
                     </a>
           
                     <a
+                    onClick={() => setMobileMenuOpen(false)}
                       href="#"
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
@@ -210,6 +215,7 @@ export default function Header() {
                     <a
                       href="#"
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      onClick={() => setMobileMenuOpen(false)}
                     >
                       Kalabana
                     </a>
@@ -219,7 +225,8 @@ export default function Header() {
                     <a
                       href="#"
                       className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                    >
+                      onClick={() => setMobileMenuOpen(false)}  
+                        >
                       Contacts
                     </a>
                   </div>
