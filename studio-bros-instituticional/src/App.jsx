@@ -21,28 +21,28 @@ function App() {
 
             <section className="z-10 " > 
               
-                <h1 id='about-us' className='pt-40 mb-8 text-center font-bold text-4xl'>About Us</h1>
+              <h1 id='about-us' className='pt-40 mb-8 text-center font-bold text-4xl sm:text-3xl md:text-4xl lg:text-5xl'>About Us</h1>
 
-                {/* First Paragraph */}
-                <div className='flex  justify-center  h-[400px]'>
-                  <div className=' flex items-stretch w-2/3'>
-                    <div className='w-1/2 flex flex-col justify-center p-8'>
-                      <p className="text-justify">
-                         Fábio Miguel, known as "Famifox", and Miguel Batista, known as "Nunex" are a 
-                         dynamic duo of young artists hailing from the vibrant city of Lisbon.
-                         Both born and raised in Quinta do Mocho neighborhood with Santomean roots, 
-                         they share a lifelong friendship and a common vision of bringing their musical dreams to life.
-                         <br></br><br></br>
-                         Their journey into the world of music began in 2007 when they founded Alto Nível Produções, 
-                         an inspired project blending traditional African rhythms with modern electronic elements. 
-                         Fueled by their unwavering passion for music, they honed their craft within the confines of their own bedrooms.
-                      </p>
-                    </div>
-                    <div className='w-1/2 p-8 flex items-center drop-shadow-xl '>
-                      <img src={Famifox}  className="object-cover h-full w-full " alt="Famifox"></img>
-                    </div>
+              {/* First Paragraph */}
+              <div className='flex flex-col lg:flex-row justify-center h-auto lg:h-[400px]'>
+                <div className='flex items-stretch w-full lg:w-2/3'>
+                  <div className='w-full lg:w-1/2 flex flex-col justify-center p-8'>
+                    <p className="text-justify">
+                      Fábio Miguel, known as "Famifox", and Miguel Batista, known as "Nunex" are a 
+                      dynamic duo of young artists hailing from the vibrant city of Lisbon.
+                      Both born and raised in Quinta do Mocho neighborhood with Santomean roots, 
+                      they share a lifelong friendship and a common vision of bringing their musical dreams to life.
+                      <br></br><br></br>
+                      Their journey into the world of music began in 2007 when they founded Alto Nível Produções, 
+                      an inspired project blending traditional African rhythms with modern electronic elements. 
+                      Fueled by their unwavering passion for music, they honed their craft within the confines of their own bedrooms.
+                    </p>
+                  </div>
+                  <div className='w-full lg:w-1/2 p-8 flex items-center drop-shadow-xl'>
+                    <img src={Famifox} className="object-cover h-full w-full" alt="Famifox"></img>
                   </div>
                 </div>
+              </div>
 
                {/*Second Paragraph*/}
                <div className='flex justify-center h-[400px]'>
