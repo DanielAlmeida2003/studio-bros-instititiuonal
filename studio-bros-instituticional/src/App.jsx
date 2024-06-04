@@ -24,52 +24,49 @@ function App() {
               <h1 id='about-us' className='pt-40 mb-8 text-center font-bold text-4xl sm:text-3xl md:text-4xl lg:text-5xl'>About Us</h1>
 
               {/* First Paragraph */}
-              <div className='flex flex-col lg:flex-row justify-center h-auto lg:h-[400px]'>
-                <div className='flex items-stretch w-full lg:w-2/3'>
-                  <div className='w-full lg:w-1/2 flex flex-col justify-center p-8'>
-                    <p className="text-justify">
+              <div className='flex flex-col md:flex-row justify-center h-auto md:h-[400px]'>
+                <div className='flex flex-col md:flex-row items-stretch w-full md:w-2/3'>
+                  <div className='w-full p-8 md:w-1/2'>
+                    <p className="text-justify sm:text-center md:text-left">
                       Fábio Miguel, known as "Famifox", and Miguel Batista, known as "Nunex" are a 
                       dynamic duo of young artists hailing from the vibrant city of Lisbon.
                       Both born and raised in Quinta do Mocho neighborhood with Santomean roots, 
                       they share a lifelong friendship and a common vision of bringing their musical dreams to life.
-                      <br></br><br></br>
+                      <br/><br/>
                       Their journey into the world of music began in 2007 when they founded Alto Nível Produções, 
                       an inspired project blending traditional African rhythms with modern electronic elements. 
                       Fueled by their unwavering passion for music, they honed their craft within the confines of their own bedrooms.
                     </p>
                   </div>
-                  <div className='w-full lg:w-1/2 p-8 flex items-center drop-shadow-xl'>
-                    <img src={Famifox} className="object-cover h-full w-full" alt="Famifox"></img>
+                  <div className='w-full p-8 md:w-1/2 flex items-center drop-shadow-xl'>
+                    <img src={Famifox} className="object-cover h-full w-full" alt="Famifox" />
                   </div>
                 </div>
               </div>
 
-               {/*Second Paragraph*/}
-               <div className='flex justify-center h-[400px]'>
-                <div className=' flex items-stretch w-2/3'>
-                <div className='w-1/2 p-8 flex items-center'>
-                    <img src={Nunex}  className="object-cover  h-full w-full drop-shadow-xl" alt="Nunex"></img>
+              {/* Second Paragraph */}
+              <div className='flex flex-col md:flex-row justify-center h-auto md:h-[400px]'>
+                <div className='flex flex-col md:flex-row items-stretch w-full md:w-2/3'>
+                  <div className='w-full p-8 md:w-1/2 flex items-center drop-shadow-xl'>
+                      <img src={Nunex} className="object-cover h-full w-full drop-shadow-xl" alt="Nunex" />              
                   </div>
-                  <div className='w-1/2  p-8'>
-                    <p className="text-justify">
+                  <div className='w-full p-8 md:w-1/2'>
+                    <p className="text-justify sm:text-center md:text-left">
                       Among their impressive repertoire, one track in particular set the dance floors ablaze: 
                       "Kapiro." This infectious composition, characterized by its mesmerizing guitar melodies 
                       and pulsating percussion beats, quickly became a summer sensation in 2017. The track earned 
-                      recognition and su- pport from some of the industry's most esteemed figures, including Boddhi
+                      recognition and support from some of the industry's most esteemed figures, including Boddhi
                       Satva, Djeff Afrozila, Manoo, Rancido, Mr.ID and other renowned artists.
-                      <br></br><br></br>
+                      <br/><br/>
                       The success of their chart-topping hits propelled the duo onto the European stage and quickly
                       around the world, where they captivated audiences in major cities such such as London, Paris,
                       Madrid, Luxembourg, Caracas, Bogotá and Panamá with their electrifying live performances.
                     </p>
                   </div>
 
-                </div>               
-               </div>
-            
+                </div>
+              </div> 
             </section>
-
-
           </main>
 
     </>
