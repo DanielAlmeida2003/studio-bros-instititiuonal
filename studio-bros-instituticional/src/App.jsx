@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import './css/App.css';
 import Header from './components/Header';
 import ReactPlayer from 'react-player';
@@ -10,6 +10,15 @@ import backgroundVideo from "./video/StudioBrosBackgroundVideo.mp4"
 function App() {
   const [count, setCount] = useState(0);
 
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.muted = true;
+      videoRef.current.play();
+    }
+  }, []);
+
   return (
     <>
         <Header />
@@ -20,10 +29,12 @@ function App() {
             <section className="flex justify-center items-center w-screen bg-black h-screen overflow-hidden relative">
               {/* Video Background */}
               <video 
+                ref={videoRef}
                 src={backgroundVideo} 
-                autoPlay 
-                loop 
-                muted 
+                autoPlay
+                loop
+                muted
+                playsInline
                 className="absolute top-0 left-0 w-full h-full object-cover z-10" 
               />
 
