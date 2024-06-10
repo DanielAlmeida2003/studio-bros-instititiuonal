@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import './css/App.css';
 import Header from './components/Header';
-
+import ReactPlayer from 'react-player';
 import Famifox  from "./img/famifox.webp"
 import Nunex  from "./img/nunex.webp"
+
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,9 +15,21 @@ function App() {
         <Header />
 
           <main > 
-            
+              
             {/* Background Image */}
-            <section className="main-background bg-custom-gradient  relative min-h-screen z-10 "> 
+            <section className="main-background bg-custom-gradient   relative min-h-screen z-10 ">
+
+              <div className=' w-full min-h-screen z-20 opacity-70 bg-black absolute'>
+              </div>
+
+              <ReactPlayer 
+                url="https://drive.google.com/file/d/1QWJz1cs9-tUCpsEs57PuYmGSC-qaW6oO/preview"
+                playing
+                muted
+                className="z-10"
+                width="100%"
+                height="auto"
+            />
             </section>
 
 
@@ -43,7 +57,7 @@ function App() {
                   </div>
                 </div>
               </div>
-
+\
               {/* Second Paragraph */}
               <div className='flex flex-col md:flex-row justify-center h-auto md:h-[400px]'>
                 <div className='flex flex-col md:flex-row items-stretch w-full md:w-2/3'>

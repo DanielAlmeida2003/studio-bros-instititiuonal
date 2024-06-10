@@ -14,7 +14,7 @@ body {
 
 .main-background{
 
-  background-image: url('../img/studio-bros-wallpaper.webp'); /* Ensure the path is correct */
+  /* v: url('../img/studio-bros-wallpaper.webp'); Ensure the path is correct */
   background-size: cover; /* Ensures the image covers the entire area */
   background-position: center  center; /* Centers the image */
   height: 100vh; /* Full viewport height */
