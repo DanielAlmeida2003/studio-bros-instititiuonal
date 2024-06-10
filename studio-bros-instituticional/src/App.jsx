@@ -17,23 +17,24 @@ function App() {
           <main > 
               
             {/* Background Image */}
-            <section className="main-background bg-custom-gradient   relative min-h-screen z-10 ">
-
-              <div className=' w-full min-h-screen z-20 opacity-70 bg-black absolute'>
-              </div>
-
-              <ReactPlayer 
+            <section className="main-background flex items-center justify-center p-0 m-0 bg-black relative h-screen z-10 ">
+                {/* Background Video */}
+              <ReactPlayer
                 url={backgroundVideo}
                 playing
                 muted
-                className="z-10"
-                width="100%"
-                height="auto"
-            />
+                loop
+                className="video-bg absolute top-0 left-0 m-0 p-0 w-full h-full object-cover"
+                width="100vw"
+                height="100vh"
+              >
+              </ReactPlayer>
+              
+
+                {/* Background Overlay */}
+                <div className="absolute inset-0 bg-black h-screen w-screen z-20 opacity-70"></div>
+
             </section>
-
-            
-
 
             <section className="z-10 " > 
               
