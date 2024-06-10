@@ -24,6 +24,15 @@ body {
 
 }
 
+/* styles.css */
+
+.custom-stroke {
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  text-stroke: 2px white;
+}
+
+
 /* width */
 ::-webkit-scrollbar {
   width: 0px;

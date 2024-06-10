@@ -17,24 +17,31 @@ function App() {
           <main > 
               
             {/* Background Image */}
-            <section className="main-background flex items-center justify-center p-0 m-0 bg-black relative h-screen z-10 ">
-                {/* Background Video */}
-              <ReactPlayer
-                url={backgroundVideo}
-                playing
-                muted
-                loop
-                className="video-bg absolute top-0 left-0 m-0 p-0 w-full h-full object-cover"
-                width="100vw"
-                height="100vh"
-              >
-              </ReactPlayer>
-              
+            <section className="flex justify-center items-center w-screen bg-black h-screen overflow-hidden relative">
+              {/* Video Background */}
+              <video 
+                src={backgroundVideo} 
+                autoPlay 
+                loop 
+                muted 
+                className="absolute top-0 left-0 w-full h-full object-cover z-10" 
+              />
 
-                {/* Background Overlay */}
-                <div className="absolute inset-0 bg-black h-screen w-screen z-20 opacity-70"></div>
+              {/* Shadow Layer */}
+              <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60 z-20"></div>
 
+              {/* Content Layer */}
+              <div className="relative z-30 text-white text-center">
+                <h1 className="text-8xl  custom-stroke">Studio Bros</h1>
+                <a href="#about-us">
+                  <button className='p-4 border-white border-2 hover:bg-white hover:text-black transition-all duration-300 rounded-md bg-transparent mt-10 w-80 text-white font-bold text-xl '>
+                    Explore
+                  </button>
+                </a>
+
+              </div>
             </section>
+
 
             <section className="z-10 " > 
               
