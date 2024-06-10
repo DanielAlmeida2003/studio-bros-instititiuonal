@@ -4,7 +4,7 @@ import Header from './components/Header';
 import ReactPlayer from 'react-player';
 import Famifox  from "./img/famifox.webp"
 import Nunex  from "./img/nunex.webp"
-
+import backgroundVideo from "./video/StudioBrosBackgroundVideo.mp4"
 
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
               </div>
 
               <ReactPlayer 
-                url="https://drive.google.com/file/d/1QWJz1cs9-tUCpsEs57PuYmGSC-qaW6oO/preview"
+                url={backgroundVideo}
                 playing
                 muted
                 className="z-10"
@@ -31,6 +31,8 @@ function App() {
                 height="auto"
             />
             </section>
+
+            
 
 
             <section className="z-10 " > 
