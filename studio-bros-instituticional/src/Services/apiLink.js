@@ -1,0 +1,2 @@
+export const artistApi = 'https://api.spotify.com/v1/search?q=Studio+Bros&type=artist';
+export const artistMusic = 'https://api.spotify.com/v1/artists/${artistId}/albums?include_groups=album,single&limit=50';
