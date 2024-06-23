@@ -1,15 +1,15 @@
 import { useState, useRef, useEffect } from 'react';
 import './css/App.css';
 import Header from './components/Header';
-import ReactPlayer from 'react-player';
 import Famifox  from "./img/famifox.webp"
 import Nunex  from "./img/nunex.webp"
 import backgroundVideo from "./video/StudioBrosBackgroundVideo.mp4"
-
+import Card from "./components/Card"
 
 function App() {
-  const [count, setCount] = useState(0);
 
+  const [count, setCount] = useState(0);
+  const [data, setData] = useState([]);
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -19,8 +19,26 @@ function App() {
     }
   }, []);
 
+  useEffect(() => {
+    fetch('/albums.json')  // Ensure the path is correct
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+ 
+        return response.json();
+      })
+      .then((data) => setData(data))
+      // .catch((error) => console.error('Error fetching JSON:', error));
+  }, []);
+
+  if (data.length === 0) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <>
+    
         <Header />
 
           <main > 
@@ -53,8 +71,7 @@ function App() {
               </div>
             </section>
 
-
-            <section className="z-10 " > 
+            <section className="z-10 "> 
               
               <h1 id='about-us' className='pt-40 mb-8 text-center font-bold text-4xl sm:text-3xl md:text-4xl lg:text-5xl'>About Us</h1>
 
@@ -78,7 +95,7 @@ function App() {
                   </div>
                 </div>
               </div>
-\
+
               {/* Second Paragraph */}
               <div className='flex flex-col md:flex-row justify-center h-auto md:h-[400px]'>
                 <div className='flex flex-col md:flex-row items-stretch w-full md:w-2/3'>
@@ -102,6 +119,24 @@ function App() {
                 </div>
               </div> 
             </section>
+
+            <section className='z-10'>
+
+              <h1 id='music' className='pt-40 mb-8 text-center font-bold text-4xl sm:text-3xl md:text-4xl lg:text-5xl'>Music</h1>
+
+
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                {data.map((albums) => (
+                  <Card key={1  } image={albums.album.name} title={img.title} description={img.description} />
+                ))}
+              
+
+              </div>
+
+
+            </section>
+
           </main>
 
     </>

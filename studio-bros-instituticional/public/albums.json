@@ -1,0 +1,884 @@
+{
+    "tracks": [
+      {
+        "album": {
+          "album_type": "album",
+          "total_tracks": 12,
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/1QiJRdw0MzW0S8HtXhwzH0"
+          },
+          "href": "https://api.spotify.com/v1/albums/1QiJRdw0MzW0S8HtXhwzH0",
+          "id": "1QiJRdw0MzW0S8HtXhwzH0",
+          "images": [
+            {
+              "url": "https://i.scdn.co/image/ab67616d0000b273fd81b675a7d9900b2a4e703b",
+              "height": 640,
+              "width": 640
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d00001e02fd81b675a7d9900b2a4e703b",
+              "height": 300,
+              "width": 300
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d00004851fd81b675a7d9900b2a4e703b",
+              "height": 64,
+              "width": 64
+            }
+          ],
+          "name": "Different",
+          "release_date": "2022-05-20",
+          "release_date_precision": "day",
+          "type": "album",
+          "uri": "spotify:album:1QiJRdw0MzW0S8HtXhwzH0",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/5TGycVupaB4WmtdWZNC2b3"
+              },
+              "href": "https://api.spotify.com/v1/artists/5TGycVupaB4WmtdWZNC2b3",
+              "id": "5TGycVupaB4WmtdWZNC2b3",
+              "name": "Studio Bros",
+              "type": "artist",
+              "uri": "spotify:artist:5TGycVupaB4WmtdWZNC2b3"
+            }
+          ],
+          "is_playable": true
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5TGycVupaB4WmtdWZNC2b3"
+            },
+            "href": "https://api.spotify.com/v1/artists/5TGycVupaB4WmtdWZNC2b3",
+            "id": "5TGycVupaB4WmtdWZNC2b3",
+            "name": "Studio Bros",
+            "type": "artist",
+            "uri": "spotify:artist:5TGycVupaB4WmtdWZNC2b3"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6hzVc8Maw5ALryCsslqpGX"
+            },
+            "href": "https://api.spotify.com/v1/artists/6hzVc8Maw5ALryCsslqpGX",
+            "id": "6hzVc8Maw5ALryCsslqpGX",
+            "name": "Táyra",
+            "type": "artist",
+            "uri": "spotify:artist:6hzVc8Maw5ALryCsslqpGX"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 313100,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "ES71G2215510"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/7oUKW2m1qnyKubbZedib3b"
+        },
+        "href": "https://api.spotify.com/v1/tracks/7oUKW2m1qnyKubbZedib3b",
+        "id": "7oUKW2m1qnyKubbZedib3b",
+        "is_playable": true,
+        "name": "Trust",
+        "popularity": 45,
+        "preview_url": "https://p.scdn.co/mp3-preview/119ec400ce1d233db68e1d6325c460a2767ba52d?cid=cfe923b2d660439caf2b557b21f31221",
+        "track_number": 1,
+        "type": "track",
+        "uri": "spotify:track:7oUKW2m1qnyKubbZedib3b",
+        "is_local": false
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "total_tracks": 10,
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/56rppxAQwfFFMdax99PbMD"
+          },
+          "href": "https://api.spotify.com/v1/albums/56rppxAQwfFFMdax99PbMD",
+          "id": "56rppxAQwfFFMdax99PbMD",
+          "images": [
+            {
+              "url": "https://i.scdn.co/image/ab67616d0000b273439e1a49b91e277a39493fef",
+              "height": 640,
+              "width": 640
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d00001e02439e1a49b91e277a39493fef",
+              "height": 300,
+              "width": 300
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d00004851439e1a49b91e277a39493fef",
+              "height": 64,
+              "width": 64
+            }
+          ],
+          "name": "Ghetto Kumbé Clubbing Remixes",
+          "release_date": "2022-11-09",
+          "release_date_precision": "day",
+          "type": "album",
+          "uri": "spotify:album:56rppxAQwfFFMdax99PbMD",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/2e74MUhJZSeg2Goe2UUAj3"
+              },
+              "href": "https://api.spotify.com/v1/artists/2e74MUhJZSeg2Goe2UUAj3",
+              "id": "2e74MUhJZSeg2Goe2UUAj3",
+              "name": "Ghetto Kumbé",
+              "type": "artist",
+              "uri": "spotify:artist:2e74MUhJZSeg2Goe2UUAj3"
+            }
+          ],
+          "is_playable": true
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/2e74MUhJZSeg2Goe2UUAj3"
+            },
+            "href": "https://api.spotify.com/v1/artists/2e74MUhJZSeg2Goe2UUAj3",
+            "id": "2e74MUhJZSeg2Goe2UUAj3",
+            "name": "Ghetto Kumbé",
+            "type": "artist",
+            "uri": "spotify:artist:2e74MUhJZSeg2Goe2UUAj3"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5TGycVupaB4WmtdWZNC2b3"
+            },
+            "href": "https://api.spotify.com/v1/artists/5TGycVupaB4WmtdWZNC2b3",
+            "id": "5TGycVupaB4WmtdWZNC2b3",
+            "name": "Studio Bros",
+            "type": "artist",
+            "uri": "spotify:artist:5TGycVupaB4WmtdWZNC2b3"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 339027,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "QZR422104723"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/71JmvhhcZwqD4jEUmRbYro"
+        },
+        "href": "https://api.spotify.com/v1/tracks/71JmvhhcZwqD4jEUmRbYro",
+        "id": "71JmvhhcZwqD4jEUmRbYro",
+        "is_playable": true,
+        "name": "Está Pillao - Studio Bros Remix",
+        "popularity": 30,
+        "preview_url": "https://p.scdn.co/mp3-preview/e834115263ff43ee29ff56777c73898d9e6794d8?cid=cfe923b2d660439caf2b557b21f31221",
+        "track_number": 8,
+        "type": "track",
+        "uri": "spotify:track:71JmvhhcZwqD4jEUmRbYro",
+        "is_local": false
+      },
+      {
+        "x": {
+          "album_type": "album",
+          "total_tracks": 12,
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/1QiJRdw0MzW0S8HtXhwzH0"
+          },
+          "href": "https://api.spotify.com/v1/albums/1QiJRdw0MzW0S8HtXhwzH0",
+          "id": "1QiJRdw0MzW0S8HtXhwzH0",
+          "images": [
+            {
+              "url": "https://i.scdn.co/image/ab67616d0000b273fd81b675a7d9900b2a4e703b",
+              "height": 640,
+              "width": 640
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d00001e02fd81b675a7d9900b2a4e703b",
+              "height": 300,
+              "width": 300
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d00004851fd81b675a7d9900b2a4e703b",
+              "height": 64,
+              "width": 64
+            }
+          ],
+          "name": "Different",
+          "release_date": "2022-05-20",
+          "release_date_precision": "day",
+          "type": "album",
+          "uri": "spotify:album:1QiJRdw0MzW0S8HtXhwzH0",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/5TGycVupaB4WmtdWZNC2b3"
+              },
+              "href": "https://api.spotify.com/v1/artists/5TGycVupaB4WmtdWZNC2b3",
+              "id": "5TGycVupaB4WmtdWZNC2b3",
+              "name": "Studio Bros",
+              "type": "artist",
+              "uri": "spotify:artist:5TGycVupaB4WmtdWZNC2b3"
+            }
+          ],
+          "is_playable": true
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5TGycVupaB4WmtdWZNC2b3"
+            },
+            "href": "https://api.spotify.com/v1/artists/5TGycVupaB4WmtdWZNC2b3",
+            "id": "5TGycVupaB4WmtdWZNC2b3",
+            "name": "Studio Bros",
+            "type": "artist",
+            "uri": "spotify:artist:5TGycVupaB4WmtdWZNC2b3"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/2TT40nXhT5ZDurh1CFCFOM"
+            },
+            "href": "https://api.spotify.com/v1/artists/2TT40nXhT5ZDurh1CFCFOM",
+            "id": "2TT40nXhT5ZDurh1CFCFOM",
+            "name": "The Hood Brodz",
+            "type": "artist",
+            "uri": "spotify:artist:2TT40nXhT5ZDurh1CFCFOM"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6hzVc8Maw5ALryCsslqpGX"
+            },
+            "href": "https://api.spotify.com/v1/artists/6hzVc8Maw5ALryCsslqpGX",
+            "id": "6hzVc8Maw5ALryCsslqpGX",
+            "name": "Táyra",
+            "type": "artist",
+            "uri": "spotify:artist:6hzVc8Maw5ALryCsslqpGX"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 204590,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "ES71G2215512"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/7dRqWD2M2bZlOVBlQnTCuq"
+        },
+        "href": "https://api.spotify.com/v1/tracks/7dRqWD2M2bZlOVBlQnTCuq",
+        "id": "7dRqWD2M2bZlOVBlQnTCuq",
+        "is_playable": true,
+        "name": "Night Sky",
+        "popularity": 32,
+        "preview_url": "https://p.scdn.co/mp3-preview/a5405c26b2eeb8ff4b0821663d76f0cbfd88c7f0?cid=cfe923b2d660439caf2b557b21f31221",
+        "track_number": 6,
+        "type": "track",
+        "uri": "spotify:track:7dRqWD2M2bZlOVBlQnTCuq",
+        "is_local": false
+      },
+      {
+        "album": {
+          "album_type": "single",
+          "total_tracks": 2,
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/0h3JjOPbW9j6AZMbWKdOvq"
+          },
+          "href": "https://api.spotify.com/v1/albums/0h3JjOPbW9j6AZMbWKdOvq",
+          "id": "0h3JjOPbW9j6AZMbWKdOvq",
+          "images": [
+            {
+              "url": "https://i.scdn.co/image/ab67616d0000b27338ff845bccbd22568126c426",
+              "height": 640,
+              "width": 640
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d00001e0238ff845bccbd22568126c426",
+              "height": 300,
+              "width": 300
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d0000485138ff845bccbd22568126c426",
+              "height": 64,
+              "width": 64
+            }
+          ],
+          "name": "Malaia",
+          "release_date": "2019-09-09",
+          "release_date_precision": "day",
+          "type": "album",
+          "uri": "spotify:album:0h3JjOPbW9j6AZMbWKdOvq",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/5TGycVupaB4WmtdWZNC2b3"
+              },
+              "href": "https://api.spotify.com/v1/artists/5TGycVupaB4WmtdWZNC2b3",
+              "id": "5TGycVupaB4WmtdWZNC2b3",
+              "name": "Studio Bros",
+              "type": "artist",
+              "uri": "spotify:artist:5TGycVupaB4WmtdWZNC2b3"
+            }
+          ],
+          "is_playable": true
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5TGycVupaB4WmtdWZNC2b3"
+            },
+            "href": "https://api.spotify.com/v1/artists/5TGycVupaB4WmtdWZNC2b3",
+            "id": "5TGycVupaB4WmtdWZNC2b3",
+            "name": "Studio Bros",
+            "type": "artist",
+            "uri": "spotify:artist:5TGycVupaB4WmtdWZNC2b3"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 270839,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "QZHN41934446"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/0hZUdmTENOdjszq6OL6SiK"
+        },
+        "href": "https://api.spotify.com/v1/tracks/0hZUdmTENOdjszq6OL6SiK",
+        "id": "0hZUdmTENOdjszq6OL6SiK",
+        "is_playable": true,
+        "name": "Malaia",
+        "popularity": 30,
+        "preview_url": "https://p.scdn.co/mp3-preview/26568b297ca560158ef96089e60833aae50896da?cid=cfe923b2d660439caf2b557b21f31221",
+        "track_number": 1,
+        "type": "track",
+        "uri": "spotify:track:0hZUdmTENOdjszq6OL6SiK",
+        "is_local": false
+      },
+      {
+        "album": {
+          "album_type": "single",
+          "total_tracks": 3,
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/5axtN66KhvphQBl7mJXqqG"
+          },
+          "href": "https://api.spotify.com/v1/albums/5axtN66KhvphQBl7mJXqqG",
+          "id": "5axtN66KhvphQBl7mJXqqG",
+          "images": [
+            {
+              "url": "https://i.scdn.co/image/ab67616d0000b2737565750211f0068e28db484b",
+              "height": 640,
+              "width": 640
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d00001e027565750211f0068e28db484b",
+              "height": 300,
+              "width": 300
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d000048517565750211f0068e28db484b",
+              "height": 64,
+              "width": 64
+            }
+          ],
+          "name": "Lendário",
+          "release_date": "2018-12-14",
+          "release_date_precision": "day",
+          "type": "album",
+          "uri": "spotify:album:5axtN66KhvphQBl7mJXqqG",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/5TGycVupaB4WmtdWZNC2b3"
+              },
+              "href": "https://api.spotify.com/v1/artists/5TGycVupaB4WmtdWZNC2b3",
+              "id": "5TGycVupaB4WmtdWZNC2b3",
+              "name": "Studio Bros",
+              "type": "artist",
+              "uri": "spotify:artist:5TGycVupaB4WmtdWZNC2b3"
+            }
+          ],
+          "is_playable": true
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5TGycVupaB4WmtdWZNC2b3"
+            },
+            "href": "https://api.spotify.com/v1/artists/5TGycVupaB4WmtdWZNC2b3",
+            "id": "5TGycVupaB4WmtdWZNC2b3",
+            "name": "Studio Bros",
+            "type": "artist",
+            "uri": "spotify:artist:5TGycVupaB4WmtdWZNC2b3"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 354044,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "US25X1801957"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/6EmIqer0UkZMMI0I7yviGg"
+        },
+        "href": "https://api.spotify.com/v1/tracks/6EmIqer0UkZMMI0I7yviGg",
+        "id": "6EmIqer0UkZMMI0I7yviGg",
+        "is_playable": true,
+        "name": "Lendário",
+        "popularity": 27,
+        "preview_url": "https://p.scdn.co/mp3-preview/c066ebb540d8cbe15fc17c0f3f29e767d016c461?cid=cfe923b2d660439caf2b557b21f31221",
+        "track_number": 1,
+        "type": "track",
+        "uri": "spotify:track:6EmIqer0UkZMMI0I7yviGg",
+        "is_local": false
+      },
+      {
+        "album": {
+          "album_type": "single",
+          "total_tracks": 1,
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/4Md3ONQimCQ43dXBzCvY1E"
+          },
+          "href": "https://api.spotify.com/v1/albums/4Md3ONQimCQ43dXBzCvY1E",
+          "id": "4Md3ONQimCQ43dXBzCvY1E",
+          "images": [
+            {
+              "url": "https://i.scdn.co/image/ab67616d0000b2739fe653c875fe286e281c6208",
+              "height": 640,
+              "width": 640
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d00001e029fe653c875fe286e281c6208",
+              "height": 300,
+              "width": 300
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d000048519fe653c875fe286e281c6208",
+              "height": 64,
+              "width": 64
+            }
+          ],
+          "name": "Sabanaxua",
+          "release_date": "2020-02-07",
+          "release_date_precision": "day",
+          "type": "album",
+          "uri": "spotify:album:4Md3ONQimCQ43dXBzCvY1E",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/5TGycVupaB4WmtdWZNC2b3"
+              },
+              "href": "https://api.spotify.com/v1/artists/5TGycVupaB4WmtdWZNC2b3",
+              "id": "5TGycVupaB4WmtdWZNC2b3",
+              "name": "Studio Bros",
+              "type": "artist",
+              "uri": "spotify:artist:5TGycVupaB4WmtdWZNC2b3"
+            }
+          ],
+          "is_playable": true
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5TGycVupaB4WmtdWZNC2b3"
+            },
+            "href": "https://api.spotify.com/v1/artists/5TGycVupaB4WmtdWZNC2b3",
+            "id": "5TGycVupaB4WmtdWZNC2b3",
+            "name": "Studio Bros",
+            "type": "artist",
+            "uri": "spotify:artist:5TGycVupaB4WmtdWZNC2b3"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 341760,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "DEH742001340"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/61s6xDDTh4vgfrukATTPXE"
+        },
+        "href": "https://api.spotify.com/v1/tracks/61s6xDDTh4vgfrukATTPXE",
+        "id": "61s6xDDTh4vgfrukATTPXE",
+        "is_playable": true,
+        "name": "Sabanaxua",
+        "popularity": 26,
+        "preview_url": "https://p.scdn.co/mp3-preview/4b0f5667e2147cc98e7635f4ccdbe201b7748b2e?cid=cfe923b2d660439caf2b557b21f31221",
+        "track_number": 1,
+        "type": "track",
+        "uri": "spotify:track:61s6xDDTh4vgfrukATTPXE",
+        "is_local": false
+      },
+      {
+        "album": {
+          "album_type": "single",
+          "total_tracks": 1,
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/7IPAMTpo8aNDGrWWv1AlAI"
+          },
+          "href": "https://api.spotify.com/v1/albums/7IPAMTpo8aNDGrWWv1AlAI",
+          "id": "7IPAMTpo8aNDGrWWv1AlAI",
+          "images": [
+            {
+              "url": "https://i.scdn.co/image/ab67616d0000b27333cf921c5f8407d5ede32c2f",
+              "height": 640,
+              "width": 640
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d00001e0233cf921c5f8407d5ede32c2f",
+              "height": 300,
+              "width": 300
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d0000485133cf921c5f8407d5ede32c2f",
+              "height": 64,
+              "width": 64
+            }
+          ],
+          "name": "Mi Corazón",
+          "release_date": "2024-05-17",
+          "release_date_precision": "day",
+          "type": "album",
+          "uri": "spotify:album:7IPAMTpo8aNDGrWWv1AlAI",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/5TGycVupaB4WmtdWZNC2b3"
+              },
+              "href": "https://api.spotify.com/v1/artists/5TGycVupaB4WmtdWZNC2b3",
+              "id": "5TGycVupaB4WmtdWZNC2b3",
+              "name": "Studio Bros",
+              "type": "artist",
+              "uri": "spotify:artist:5TGycVupaB4WmtdWZNC2b3"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/6sIsLfY5y0OFtBSbSNEjmW"
+              },
+              "href": "https://api.spotify.com/v1/artists/6sIsLfY5y0OFtBSbSNEjmW",
+              "id": "6sIsLfY5y0OFtBSbSNEjmW",
+              "name": "SOLUNA",
+              "type": "artist",
+              "uri": "spotify:artist:6sIsLfY5y0OFtBSbSNEjmW"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/1s0SFRaivMSqrjS3C3R7xR"
+              },
+              "href": "https://api.spotify.com/v1/artists/1s0SFRaivMSqrjS3C3R7xR",
+              "id": "1s0SFRaivMSqrjS3C3R7xR",
+              "name": "Sila Lua",
+              "type": "artist",
+              "uri": "spotify:artist:1s0SFRaivMSqrjS3C3R7xR"
+            }
+          ],
+          "is_playable": true
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5TGycVupaB4WmtdWZNC2b3"
+            },
+            "href": "https://api.spotify.com/v1/artists/5TGycVupaB4WmtdWZNC2b3",
+            "id": "5TGycVupaB4WmtdWZNC2b3",
+            "name": "Studio Bros",
+            "type": "artist",
+            "uri": "spotify:artist:5TGycVupaB4WmtdWZNC2b3"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6sIsLfY5y0OFtBSbSNEjmW"
+            },
+            "href": "https://api.spotify.com/v1/artists/6sIsLfY5y0OFtBSbSNEjmW",
+            "id": "6sIsLfY5y0OFtBSbSNEjmW",
+            "name": "SOLUNA",
+            "type": "artist",
+            "uri": "spotify:artist:6sIsLfY5y0OFtBSbSNEjmW"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/1s0SFRaivMSqrjS3C3R7xR"
+            },
+            "href": "https://api.spotify.com/v1/artists/1s0SFRaivMSqrjS3C3R7xR",
+            "id": "1s0SFRaivMSqrjS3C3R7xR",
+            "name": "Sila Lua",
+            "type": "artist",
+            "uri": "spotify:artist:1s0SFRaivMSqrjS3C3R7xR"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 412131,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "ES71G2409458"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/7sULdJXFpVXy5m7B0EZ0lU"
+        },
+        "href": "https://api.spotify.com/v1/tracks/7sULdJXFpVXy5m7B0EZ0lU",
+        "id": "7sULdJXFpVXy5m7B0EZ0lU",
+        "is_playable": true,
+        "name": "Mi Corazón",
+        "popularity": 26,
+        "preview_url": "https://p.scdn.co/mp3-preview/ab372ca98e97836f7e6bfc93ce1c3511b687cd4b?cid=cfe923b2d660439caf2b557b21f31221",
+        "track_number": 1,
+        "type": "track",
+        "uri": "spotify:track:7sULdJXFpVXy5m7B0EZ0lU",
+        "is_local": false
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "total_tracks": 12,
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/1QiJRdw0MzW0S8HtXhwzH0"
+          },
+          "href": "https://api.spotify.com/v1/albums/1QiJRdw0MzW0S8HtXhwzH0",
+          "id": "1QiJRdw0MzW0S8HtXhwzH0",
+          "images": [
+            {
+              "url": "https://i.scdn.co/image/ab67616d0000b273fd81b675a7d9900b2a4e703b",
+              "height": 640,
+              "width": 640
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d00001e02fd81b675a7d9900b2a4e703b",
+              "height": 300,
+              "width": 300
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d00004851fd81b675a7d9900b2a4e703b",
+              "height": 64,
+              "width": 64
+            }
+          ],
+          "name": "Different",
+          "release_date": "2022-05-20",
+          "release_date_precision": "day",
+          "type": "album",
+          "uri": "spotify:album:1QiJRdw0MzW0S8HtXhwzH0",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/5TGycVupaB4WmtdWZNC2b3"
+              },
+              "href": "https://api.spotify.com/v1/artists/5TGycVupaB4WmtdWZNC2b3",
+              "id": "5TGycVupaB4WmtdWZNC2b3",
+              "name": "Studio Bros",
+              "type": "artist",
+              "uri": "spotify:artist:5TGycVupaB4WmtdWZNC2b3"
+            }
+          ],
+          "is_playable": true
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5TGycVupaB4WmtdWZNC2b3"
+            },
+            "href": "https://api.spotify.com/v1/artists/5TGycVupaB4WmtdWZNC2b3",
+            "id": "5TGycVupaB4WmtdWZNC2b3",
+            "name": "Studio Bros",
+            "type": "artist",
+            "uri": "spotify:artist:5TGycVupaB4WmtdWZNC2b3"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6SuXG6pciGcVagGcwhOAKD"
+            },
+            "href": "https://api.spotify.com/v1/artists/6SuXG6pciGcVagGcwhOAKD",
+            "id": "6SuXG6pciGcVagGcwhOAKD",
+            "name": "DanDara",
+            "type": "artist",
+            "uri": "spotify:artist:6SuXG6pciGcVagGcwhOAKD"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 316000,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "ES71G2216121"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/3QuPYzdSmuAnaOyzngiDOv"
+        },
+        "href": "https://api.spotify.com/v1/tracks/3QuPYzdSmuAnaOyzngiDOv",
+        "id": "3QuPYzdSmuAnaOyzngiDOv",
+        "is_playable": true,
+        "name": "Sundiata Keita",
+        "popularity": 23,
+        "preview_url": "https://p.scdn.co/mp3-preview/333ae631b3ae93914a2772687bca05ee80047fd4?cid=cfe923b2d660439caf2b557b21f31221",
+        "track_number": 5,
+        "type": "track",
+        "uri": "spotify:track:3QuPYzdSmuAnaOyzngiDOv",
+        "is_local": false
+      },
+      {
+        "album": {
+          "album_type": "compilation",
+          "total_tracks": 7,
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/3xAlq6pffOkeg5yT6aSJbi"
+          },
+          "href": "https://api.spotify.com/v1/albums/3xAlq6pffOkeg5yT6aSJbi",
+          "id": "3xAlq6pffOkeg5yT6aSJbi",
+          "images": [
+            {
+              "url": "https://i.scdn.co/image/ab67616d0000b273118b2fee19895db17ba07946",
+              "height": 640,
+              "width": 640
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d00001e02118b2fee19895db17ba07946",
+              "height": 300,
+              "width": 300
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d00004851118b2fee19895db17ba07946",
+              "height": 64,
+              "width": 64
+            }
+          ],
+          "name": "Tela",
+          "release_date": "2020-11-23",
+          "release_date_precision": "day",
+          "type": "album",
+          "uri": "spotify:album:3xAlq6pffOkeg5yT6aSJbi",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/5TGycVupaB4WmtdWZNC2b3"
+              },
+              "href": "https://api.spotify.com/v1/artists/5TGycVupaB4WmtdWZNC2b3",
+              "id": "5TGycVupaB4WmtdWZNC2b3",
+              "name": "Studio Bros",
+              "type": "artist",
+              "uri": "spotify:artist:5TGycVupaB4WmtdWZNC2b3"
+            }
+          ],
+          "is_playable": true
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5TGycVupaB4WmtdWZNC2b3"
+            },
+            "href": "https://api.spotify.com/v1/artists/5TGycVupaB4WmtdWZNC2b3",
+            "id": "5TGycVupaB4WmtdWZNC2b3",
+            "name": "Studio Bros",
+            "type": "artist",
+            "uri": "spotify:artist:5TGycVupaB4WmtdWZNC2b3"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 207350,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "DEH742042693"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/4mBy5VOB9QqoZjpOtm2dm6"
+        },
+        "href": "https://api.spotify.com/v1/tracks/4mBy5VOB9QqoZjpOtm2dm6",
+        "id": "4mBy5VOB9QqoZjpOtm2dm6",
+        "is_playable": true,
+        "name": "Tela",
+        "popularity": 23,
+        "preview_url": "https://p.scdn.co/mp3-preview/19b5fffebbe8e15f640ecfdfefc92965d1919903?cid=cfe923b2d660439caf2b557b21f31221",
+        "track_number": 3,
+        "type": "track",
+        "uri": "spotify:track:4mBy5VOB9QqoZjpOtm2dm6",
+        "is_local": false
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "total_tracks": 12,
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/245RGH2wUkUApZvtN9Dpkr"
+          },
+          "href": "https://api.spotify.com/v1/albums/245RGH2wUkUApZvtN9Dpkr",
+          "id": "245RGH2wUkUApZvtN9Dpkr",
+          "images": [
+            {
+              "url": "https://i.scdn.co/image/ab67616d0000b27312acb83f6996cc620eb0e74d",
+              "height": 640,
+              "width": 640
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d00001e0212acb83f6996cc620eb0e74d",
+              "height": 300,
+              "width": 300
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616d0000485112acb83f6996cc620eb0e74d",
+              "height": 64,
+              "width": 64
+            }
+          ],
+          "name": "Boddhi Satva The Remixes Pt. 1",
+          "release_date": "2018-12-07",
+          "release_date_precision": "day",
+          "type": "album",
+          "uri": "spotify:album:245RGH2wUkUApZvtN9Dpkr",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/1f1bsto5CRaRaaGkZvvjOn"
+              },
+              "href": "https://api.spotify.com/v1/artists/1f1bsto5CRaRaaGkZvvjOn",
+              "id": "1f1bsto5CRaRaaGkZvvjOn",
+              "name": "Boddhi Satva",
+              "type": "artist",
+              "uri": "spotify:artist:1f1bsto5CRaRaaGkZvvjOn"
+            }
+          ],
+          "is_playable": true
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/1f1bsto5CRaRaaGkZvvjOn"
+            },
+            "href": "https://api.spotify.com/v1/artists/1f1bsto5CRaRaaGkZvvjOn",
+            "id": "1f1bsto5CRaRaaGkZvvjOn",
+            "name": "Boddhi Satva",
+            "type": "artist",
+            "uri": "spotify:artist:1f1bsto5CRaRaaGkZvvjOn"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/7bMAd2330JrFr3tFsRrz5w"
+            },
+            "href": "https://api.spotify.com/v1/artists/7bMAd2330JrFr3tFsRrz5w",
+            "id": "7bMAd2330JrFr3tFsRrz5w",
+            "name": "James Germain",
+            "type": "artist",
+            "uri": "spotify:artist:7bMAd2330JrFr3tFsRrz5w"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5TGycVupaB4WmtdWZNC2b3"
+            },
+            "href": "https://api.spotify.com/v1/artists/5TGycVupaB4WmtdWZNC2b3",
+            "id": "5TGycVupaB4WmtdWZNC2b3",
+            "name": "Studio Bros",
+            "type": "artist",
+            "uri": "spotify:artist:5TGycVupaB4WmtdWZNC2b3"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 432680,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "QM7281809186"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/1P1AutKsZWYYG98LyxcHDD"
+        },
+        "href": "https://api.spotify.com/v1/tracks/1P1AutKsZWYYG98LyxcHDD",
+        "id": "1P1AutKsZWYYG98LyxcHDD",
+        "is_playable": true,
+        "name": "An Nou Ale - Studio Bros Main Mix",
+        "popularity": 21,
+        "preview_url": "https://p.scdn.co/mp3-preview/4f4b3ad4d276e6a9bf78b7b5027c392b17c25e9a?cid=cfe923b2d660439caf2b557b21f31221",
+        "track_number": 7,
+        "type": "track",
+        "uri": "spotify:track:1P1AutKsZWYYG98LyxcHDD",
+        "is_local": false
+      }
+    ]
+  }
