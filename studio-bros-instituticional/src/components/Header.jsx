@@ -72,19 +72,13 @@ export default function Header() {
           <a href="#music" className="text-sm font-semibold leading-6 text-white">
             Music
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
+          <a href="#videos" className="text-sm font-semibold leading-6 text-white">
             Video
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
-            Podcast
+          <a href="#social" className="text-sm font-semibold leading-6 text-white">
+            Social Media
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
-            Tour
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
-            Kalabana
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
+          <a href="#contacts" className="text-sm font-semibold leading-6 text-white">
             Contacts
           </a>
         </PopoverGroup>
@@ -135,46 +129,23 @@ export default function Header() {
                     </a>
                     <a
                       onClick={() => setMobileMenuOpen(false)}
-                      href="#"
+                      href="#music"
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       Music
                     </a>
                     <a
                       onClick={() => setMobileMenuOpen(false)}
-                      href="#"
+                      href="#video"
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       Video
-                    </a>
-                    <a
-                      href="#"
-                      onClick={() => setMobileMenuOpen(false)}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                    >
-                      Podcast
-                    </a>
-          
-                    <a
-                    onClick={() => setMobileMenuOpen(false)}
-                      href="#"
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                    >
-                      Tour
-                    </a>
-
-                    <a
-                      href="#"
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      Kalabana
                     </a>
 
                   </div>
                   <div className="py-6">
                     <a
-                      href="#"
+                      href="#contacts"
                       className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                       onClick={() => setMobileMenuOpen(false)}  
                         >
