@@ -1,25 +1,36 @@
+import axios from 'axios';
+
 class YoutubeService {
 
     constructor(apiKey) {
         this.apiKey = import.meta.env.VITE_YOUTUBE_KEY_REDIRECT_URI;
-        this.baseUrl = 'https://www.googleapis.com/youtube/v3';
+        this.baseUrl = 'https://yt-api.p.rapidapi.com/channel/videos';
+        this.baseKey = 'UCI3KVa41EWNEdzYdWtchdjA'
     }
 
 
     async fetchVideosFromChannel() {
-        const response = await fetch(`${this.baseUrl}/search?key=${this.apiKey}&channelId=UCI3KVa41EWNEdzYdWtchdjA&part=snippet,id&order=date&maxResults=20`);
-        if (!response.ok) {
-          throw new Error('Failed to fetch videos');
+
+      const options = {
+        method: 'GET',
+        url: this.baseUrl,
+        params: {
+          id: this.baseKey
+        },
+        headers: {
+          'x-rapidapi-key': 'a2d2daa9d3mshd38c749250dcd6cp185052jsnaef6471e472c',
+          'x-rapidapi-host': 'yt-api.p.rapidapi.com'
         }
-        const data = await response.json();
-        return data.items.map(item => ({
-          id: item.id.videoId,
-          title: item.snippet.title,
-          description: item.snippet.description,
-          thumbnail: item.snippet.thumbnails.high.url,
-          videoUrl: `https://www.youtube.com/embed/${item.id.videoId}`
-        }));
+      };
+      
+      try {
+        const response = await axios.request(options);
+        return response.data;
+        
+      } catch (error) {
+        console.error(error);
       }
+    }
 
 
 }
