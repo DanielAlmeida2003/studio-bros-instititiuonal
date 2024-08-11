@@ -73,13 +73,10 @@ export default function Header() {
             Music
           </a>
           <a href="#videos" className="text-sm font-semibold leading-6 text-white">
-            Video
+            Videos
           </a>
           <a href="#social" className="text-sm font-semibold leading-6 text-white">
             Social Media
-          </a>
-          <a href="#contacts" className="text-sm font-semibold leading-6 text-white">
-            Contacts
           </a>
         </PopoverGroup>
 
@@ -139,17 +136,17 @@ export default function Header() {
                       href="#video"
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
-                      Video
+                      Videos
                     </a>
 
                   </div>
                   <div className="py-6">
                     <a
-                      href="#contacts"
+                      href="#social"
                       className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                       onClick={() => setMobileMenuOpen(false)}  
                         >
-                      Contacts
+                      Social Media
                     </a>
                   </div>
                 </div>

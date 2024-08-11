@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import './css/App.css';
+import './js/socialMediaCards.js'
 
 import Header from './components/Header';
 import Famifox from "./img/famifox.webp";
@@ -11,10 +12,14 @@ import { getAccessToken } from './service/spotifyCallBacks.js';
 import AlbumFetch from './fetch/Albums.js';
 import AlbumService from './service/albumsService.js';
 
-import { FaSpotify, FaYoutube } from "react-icons/fa";
+import { FaSpotify, FaYoutube, FaInstagram, FaTwitter, FaDeezer, FaFacebook } from "react-icons/fa";
 import { artistId } from './service/apiLink.js';
 import YoutubeService from './service/youtube-callback.js';
 import VideoFetch from './fetch/Videos.js';
+import { FaAppleWhole } from 'react-icons/fa6';
+import Footer from './components/Footer.jsx';
+
+
 
 function App() {
   const [accessToken, setAccessToken] = useState(null);
@@ -169,7 +174,7 @@ const StudioBrosData = ({ accessToken }) => {
           </div>
         </section>
 
-        <section className="z-10 min-h-screen">
+        <section className="z-10 min-h-screen relative">
           <h1 id='music' className='mb-8 pt-[220px] text-center font-bold text-4xl sm:text-3xl md:text-4xl lg:text-5xl'>Music</h1>
           <div className="grid mx-auto grid-cols-1 w-2/3 justify-center md:grid-cols-2 lg:grid-cols-3 gap-4">
             {albums.map(album => (
@@ -183,22 +188,45 @@ const StudioBrosData = ({ accessToken }) => {
               </div>
             ))}
           </div>
+
+          <div class="absolute bottom-0 w-full text-xl   text-white bp">
+            <div className="flex justify-center">
+              <button type="button" 
+                class="py-2.5 w-[200px] px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none duration-300 bg-black rounded-lg border border-gray-200
+                 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-black
+                 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                See more details
+              </button>
+
+            </div>
+
+          </div>
         </section>
 
         <section>
-          <h1 id='videos' className='mb-8 pt-[220px] text-center font-bold text-4xl sm:text-3xl md:text-4xl lg:text-5xl'>Video</h1>
+          <h1 id='videos' className='mb-8 pt-[220px] text-center font-bold text-4xl sm:text-3xl md:text-4xl lg:text-5xl'>Videos</h1>
 
 
-          <div className="grid mx-auto grid-cols-1 w-2/3 justify-center">
+          <div className="grid mx-auto  lg:grid-cols-2 md:grid-cols-1 w-2/3 justify-center">
             
           {videos.map(album => (
 
             
-              <div key={album.id} className="border-0 p-4 duration-300 w-[312px] h-[188px]  ease-out rounded">
-                <img src={album.thumbnail[3].url} alt={album.name} className="mb-2 w-full object-cover" />
-                <h4 className="text-lg font-bold">{album.name}</h4>
+              <div key={album.videoId} className="border-0 p-4 duration-300 w-full h-auto   ease-out rounded">
+
+                <div className="relative">
+                  <img src={album.thumbnail[3].url} alt={album.name} className="mb-2 w-full object-cover" />
+                </div>
+
+                
+                <h4 className="text-lg font-bold">{album.title}</h4>
                 <p className="text-sm mb-4">Release Date: {album.publishDate}</p>
-                <a href={`https://www.youtube.com/watch?v=${album.videoId}`} target="_blank" rel="noopener noreferrer" className="text-red-500 text-2xl">
+                <p className='text-sm'>
+                  {album.description}
+                </p>
+
+
+                <a href={`https://www.youtube.com/watch?v=${album.videoId}`} target="_blank" rel="noopener noreferrer" className="text-red-500 duration-300 hover:text-red-300 text-2xl">
                   <FaYoutube />
                 </a>
               </div>
@@ -209,7 +237,69 @@ const StudioBrosData = ({ accessToken }) => {
           </div>
 
         </section>
+
+        <section>
+
+          <h1 id='social' className='pt-[170px] mb-3 text-center font-bold text-4xl sm:text-3xl md:text-4xl lg:text-5xl'>Social Media</h1>
+
+
+            <div className="button-container">
+    
+              <div className="glass-btn purple-btn ">
+                <a target='_blank' href='https://www.instagram.com/studiobros/'>
+                  <FaInstagram  className='imgForSocialMedia text-3xl text-violet-700'></FaInstagram>
+                </a>
+                
+              </div>
+
+              <div className="glass-btn red-btn">
+                <a target='_blank' href='https://www.youtube.com/@studiobros'>
+                  <FaYoutube  className='imgForSocialMedia text-3xl text-red-500'></FaYoutube>
+                </a>
+              </div>
+              
+
+              <div className="glass-btn blue-btn">
+                <a target='_blank' href='https://www.youtube.com/@studiobros'>
+                  <FaFacebook  className='imgForSocialMedia text-3xl text-blue-700'></FaFacebook>
+                </a>
+              </div>
+
+              <div className="glass-btn green-btn">
+                <a target='_blank' href='https://www.youtube.com/@studiobros'>
+                  <FaSpotify  className='imgForSocialMedia text-3xl text-green-500'></FaSpotify>
+                </a>
+              </div>
+
+              <div className="glass-btn red-btn">
+                <a target='_blank' href='https://music.apple.com/pt/artist/studio-bros/1354469914'>
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Apple_Music_icon.svg/2048px-Apple_Music_icon.svg.png" alt="soundcloud" className='imgForSocialMediaForAppleMusic'/>
+                </a>
+              </div>
+
+              <div className="glass-btn amber-btn">
+                <a target='_blank' href='https://soundcloud.com/studiobrosofficial'>
+                  <img src="https://i.postimg.cc/tgQ1H1Rp/soundcloud.png" alt="soundcloud" className='imgForSocialMedia'/>
+                </a>
+              </div>
+
+              <div className="glass-btn black-btn">
+                <a target='_blank' href='https://www.deezer.com/pt/artist/14382037'>
+                  <FaDeezer className='imgForSocialMedia text-3xl '></FaDeezer>
+                </a>
+              </div>
+
+
+
+            </div>
+
+        </section>
+
       </main>
+
+      <Footer>
+
+      </Footer>
     </>
   );
 }

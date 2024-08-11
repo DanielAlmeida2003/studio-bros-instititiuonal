@@ -1,39 +1,33 @@
+import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa"
+
 function Footer() {
     return (
       <>
-        <div className=" p-[30px]">
-            <nav>
-                <ul className="uppercase font-bold w-100 grid grid-flow-col s text-white text-2xl justify-stretch tracking-wide">
-
-                    <li className="p-3">
-                        <a>
-                            Pre-Order "New Music"
-                        </a>
-                    </li>
-
-                    <li className="p-3">
-                        <a>
-                            Music
-                        </a>
-                    </li>
-
-                    <li className="p-3">
-                        <a>
-                        Tour
-                        </a>
-                    </li>
-
-                    <li className="p-3">
-                        <a>
-                            Videos
-                        </a>
-                    </li>
 
 
+<footer className="bg-black h-32 flex mt-[130px]">
+    <div className="mx-auto w-full max-w-screen-xl">
+        <div className="px-4 py-6 mt-auto h-full mb-auto  bg-black md:flex md:items-center md:justify-between">
+            <span className="text-sm bg-black dark:text-gray-300 sm:text-center">© 2024 <a href="https://flowbite.com/">Studio Bros™</a>. All Rights Reserved.
+            </span>
+            <div className="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
 
-                </ul>
-            </nav>
+                <a href="https://www.instagram.com/studiobros/" target="_blank" className="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                    <FaInstagram></FaInstagram>
+                    <span className="sr-only">Instagram page</span>
+                </a>
+                <a href="https://www.youtube.com/@studiobros" target="_blank" className="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                    <FaYoutube></FaYoutube>
+                    <span className="sr-only">Youtube page</span>
+                </a>
+                <a href="https://www.youtube.com/@studiobros" target="_blank" className="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                    <FaFacebook></FaFacebook>
+                    <span className="sr-only">Facebook page</span>
+                </a>
+            </div>
         </div>
+    </div>
+</footer>
 
       </>
     )

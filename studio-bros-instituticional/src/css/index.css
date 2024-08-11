@@ -199,3 +199,141 @@ body {
 }
 
 
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 50px;;
+}
+
+.glass-btn {
+  width: 100px;
+  height: 100px;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  margin-left: 1em;
+  margin-right: 1em;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.glass-btn.purple-btn  {
+  -webkit-box-shadow: 0px 20px 20px -17px rgba(169, 10, 218, 0.53);
+  -moz-box-shadow: 0px 20px 20px -17px rgba(110, 8, 119, 0.53);
+  box-shadow: 0px 20px 20px -17px rgba(183, 2, 189, 0.53);
+}
+
+.glass-btn.blue-btn  {
+  -webkit-box-shadow: 0px 20px 35px -16px rgba(0, 111, 255, 0.65);
+  -moz-box-shadow: 0px 20px 35px -16px rgba(0, 111, 255, 0.65);
+  box-shadow: 0px 20px 35px -16px rgba(0, 111, 255, 0.65);
+}
+
+.glass-btn.green-btn  {
+  -webkit-box-shadow: 0px 20px 35px -16px rgba(0, 255, 76, 0.65);
+  -moz-box-shadow: 0px 20px 35px -16px rgba(0, 255, 76, 0.65);
+  box-shadow: 0px 20px 35px -16px rgba(0, 255, 76, 0.65);
+}
+
+.glass-btn.green-btn:hover  {
+  -webkit-box-shadow: 0px 20px 35px -16px rgba(0, 255, 76, 0.65);
+  -moz-box-shadow: 0px 20px 35px -16px rgba(0, 255, 76, 0.65);
+  box-shadow: 0px 20px 35px -16px rgba(0, 255, 76, 0.65);
+}
+
+.glass-btn.black-btn  {
+  -webkit-box-shadow: 0px 20px 35px -16px rgb(77, 77, 77);
+  -moz-box-shadow: 0px 20px 35px -16px rgb(77, 77, 77);
+  box-shadow: 0px 20px 35px -16px rgb(77, 77, 77);
+}
+
+.glass-btn.black-btn:hover  {
+  -webkit-box-shadow: 0px 20px 35px -16px rgb(77, 77, 77);
+  -moz-box-shadow: 0px 20px 35px -16px rgb(77, 77, 77);
+  box-shadow: 0px 20px 35px -16px rgb(77, 77, 77);
+}
+
+
+.glass-btn.blue-btn:hover {
+  -webkit-box-shadow: 0px 20px 35px -16px rgba(0, 111, 255, 0.65);
+  -moz-box-shadow: 0px 20px 35px -16px rgba(0, 111, 255, 0.65);
+  box-shadow: 0px 20px 35px -16px rgba(0, 111, 255, 0.65);
+}
+
+.glass-btn.blue-btn .content {
+  font-size: 4em;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(to right, #006fff, #00acff 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 10px 37px rgba(0, 111, 255, 0.8);
+}
+
+.glass-btn.purple-btn .content {
+  font-size: 4em;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(to right, #800b6c, #ffee00 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 10px 37px rgba(0, 111, 255, 0.8);
+}
+
+.glass-btn.red-btn {
+  -webkit-box-shadow: 0px 20px 20px -17px rgba(255, 16, 39, 0.5);
+  -moz-box-shadow: 0px 20px 20px -17px rgba(255, 16, 39, 0.5);
+  box-shadow: 0px 20px 20px -17px rgba(255, 16, 39, 0.5);
+}
+
+.glass-btn.red-btn:hover {
+  -webkit-box-shadow: 0px 20px 35px -16px rgba(255, 16, 39, 0.57);
+  -moz-box-shadow: 0px 20px 35px -16px rgba(255, 16, 39, 0.57);
+  box-shadow: 0px 20px 35px -16px rgba(255, 16, 39, 0.57);
+}
+
+.glass-btn.red-btn .content {
+  font-size: 4em;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(to right, #ff1027, #ff4f06 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 10px 37px rgba(255, 16, 39, 0.6);
+}
+
+.glass-btn.amber-btn {
+  -webkit-box-shadow: 0px 20px 20px -17px rgba(255, 159, 16, 0.53);
+  -moz-box-shadow: 0px 20px 20px -17px rgba(255, 159, 16, 0.53);
+  box-shadow: 0px 20px 20px -17px rgba(255, 159, 16, 0.53);
+}
+
+.glass-btn.amber-btn:hover {
+  -webkit-box-shadow: 0px 20px 35px -16px rgba(255, 159, 16, 0.6);
+  -moz-box-shadow: 0px 20px 35px -16px rgba(255, 159, 16, 0.6);
+  box-shadow: 0px 20px 35px -16px rgba(255, 159, 16, 0.6);
+}
+
+.glass-btn.amber-btn .content {
+  font-size: 4em;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(to right, #ff8d00, #f7ad07 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 10px 37px rgba(255, 94, 16, 0.7);
+}
+
+.glass-btn:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-5px);
+  transition: all 0.3s;
+}
+
+.imgForSocialMedia{
+  width: 5.5em;
+}
+
+.imgForSocialMediaForAppleMusic{
+  width: 1.8em;
+}
