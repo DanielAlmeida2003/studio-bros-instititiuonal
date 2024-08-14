@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
 import './css/App.css';
-import './js/socialMediaCards.js'
 
 import Header from './components/Header';
 import Famifox from "./img/famifox.webp";
@@ -16,7 +15,7 @@ import { FaSpotify, FaYoutube, FaInstagram, FaTwitter, FaDeezer, FaFacebook } fr
 import { artistId } from './service/apiLink.js';
 import YoutubeService from './service/youtube-callback.js';
 import VideoFetch from './fetch/Videos.js';
-import { FaAppleWhole } from 'react-icons/fa6';
+
 import Footer from './components/Footer.jsx';
 
 
@@ -48,6 +47,11 @@ function App() {
 const StudioBrosData = ({ accessToken }) => {
   const [albums, setAlbums] = useState([]);
   const [videos, setVideos] = useState([]);
+
+  const [visibleAlbums, setVisibleAlbums] = useState(8); // Number of albums to display
+  const [visibleVideos, setVisibleVideos] = useState(6); // Number of albums to display
+
+
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -60,6 +64,9 @@ const StudioBrosData = ({ accessToken }) => {
     const fetchSpotifyAlbums = async () => {
       try {
         const albumsWithCovers = await albumsService.fetchAlbumsWithCoverImages(artistId, accessToken, { signal });
+        
+        console.log(albumsWithCovers);
+
         setAlbums(albumsWithCovers);
       } catch (error) {
         if (error.name !== 'AbortError') {
@@ -72,8 +79,6 @@ const StudioBrosData = ({ accessToken }) => {
       try {
 
         const youtube = await videosService.fetchVideosFromChannel({ signal });
-
-        console.log(youtube.data)
 
         setVideos(youtube.data);
 
@@ -92,10 +97,47 @@ const StudioBrosData = ({ accessToken }) => {
     fetchSpotifyAlbums();
     fetchYoutubeVideos();
 
+
+
+    // When the gallery button is clicked
+    document.getElementById("btn-show-music")?.addEventListener("click", function(event) {
+  
+      // Prevent default behavior
+      event.preventDefault();
+  
+      // Get all hidden images
+      const hiddenImages = Array.from(document.querySelectorAll(".cardMusic")).filter(img => img.classList.contains("hidden") === true);
+  
+      // Show the next four hidden images
+      hiddenImages.slice(0, 4).forEach(img => {
+          img.classList.remove("hidden");
+          let opacity = 0;
+          const fadeIn = setInterval(() => {
+          if (opacity >= 1) clearInterval(fadeIn);
+          img.style.opacity = opacity;
+          opacity += 0.1;
+          }, 80);
+      });
+  
+      // If the length of hiddenImages is 4, hide the button
+      if (hiddenImages.length <= 4) {
+          this.style.display = "none";
+      }
+    });
+    
+
     return () => {
       abortController.abort();
     };
   }, [accessToken]);
+
+  const handleShowMore = () => {
+    setVisibleAlbums(prevVisible => prevVisible + 4);
+  };
+
+  const handleShowMoreVideos = () => {
+    setVisibleVideos(prevVisible => prevVisible + 4);
+  };
 
   if (!albums && !videos)
     return (
@@ -174,12 +216,12 @@ const StudioBrosData = ({ accessToken }) => {
           </div>
         </section>
 
-        <section className="z-10 min-h-screen relative">
+        <section className="z-10 min-h-screen ">
           <h1 id='music' className='mb-8 pt-[220px] text-center font-bold text-4xl sm:text-3xl md:text-4xl lg:text-5xl'>Music</h1>
           <div className="grid mx-auto grid-cols-1 w-2/3 justify-center md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {albums.map(album => (
-              <div key={album.id} className="border-0 p-4 hover:border-0 hover:p-1 duration-300 ease-out rounded shadow-md">
-                <img src={album.images[0].url} alt={album.name} className="mb-2" />
+            {albums.slice(0, visibleAlbums).map(album => (
+              <div key={album.id} className="border-0 p-4 hover:border-0 hover:p-1 duration-300 ease-out rounded shadow-md cardMusic" >
+                <img src={album.images[0].url} target={visibleAlbums} alt={album.name} className="mb-2" />
                 <h4 className="text-lg font-bold">{album.name}</h4>
                 <p className="text-sm mb-4">Release Date: {album.release_date}</p>
                 <a href={album.external_urls.spotify} target="_blank" rel="noopener noreferrer" className="text-green-500 text-2xl">
@@ -189,18 +231,23 @@ const StudioBrosData = ({ accessToken }) => {
             ))}
           </div>
 
-          <div class="absolute bottom-0 w-full text-xl   text-white bp">
-            <div className="flex justify-center">
-              <button type="button" 
-                class="py-2.5 w-[200px] px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none duration-300 bg-black rounded-lg border border-gray-200
-                 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-black
-                 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
-                See more details
-              </button>
-
+          {visibleAlbums < albums.length && (
+            <div className="bottom-0 mt-6 w-full text-xl text-white bp">
+              <div className="bottom-0 mt-6 w-full text-xl text-white bp">
+                <div className="flex justify-center">
+                  <button type="button" 
+                    className="py-2.5 w-[200px] px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none duration-300 bg-black rounded-lg border border-gray-200
+                    hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-black
+                    dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                    onClick={handleShowMore}
+                    >
+                    See more details
+                  </button>
+                </div>
+              </div>
             </div>
+          )}
 
-          </div>
         </section>
 
         <section>
@@ -209,33 +256,39 @@ const StudioBrosData = ({ accessToken }) => {
 
           <div className="grid mx-auto  lg:grid-cols-2 md:grid-cols-1 w-2/3 justify-center">
             
-          {videos.map(album => (
-
-            
+          {videos.slice(0, visibleVideos).map(album => (
               <div key={album.videoId} className="border-0 p-4 duration-300 w-full h-auto   ease-out rounded">
-
                 <div className="relative">
                   <img src={album.thumbnail[3].url} alt={album.name} className="mb-2 w-full object-cover" />
                 </div>
-
-                
                 <h4 className="text-lg font-bold">{album.title}</h4>
                 <p className="text-sm mb-4">Release Date: {album.publishDate}</p>
                 <p className='text-sm'>
                   {album.description}
                 </p>
-
-
                 <a href={`https://www.youtube.com/watch?v=${album.videoId}`} target="_blank" rel="noopener noreferrer" className="text-red-500 duration-300 hover:text-red-300 text-2xl">
                   <FaYoutube />
                 </a>
               </div>
             ))}
-
-
-          
           </div>
 
+          {visibleVideos < videos.length && (
+            <div className="bottom-0 mt-8 w-full text-xl text-white bp">
+              <div className="bottom-0 mt-6 w-full text-xl text-white bp">
+                <div className="flex justify-center">
+                  <button type="button" 
+                    className="py-2.5 w-[200px] px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none duration-300 bg-black rounded-lg border border-gray-200
+                    hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-black
+                    dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                    onClick={handleShowMoreVideos}
+                    >
+                    See more details
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
         </section>
 
         <section>

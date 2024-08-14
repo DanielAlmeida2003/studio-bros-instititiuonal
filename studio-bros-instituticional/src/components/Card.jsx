@@ -1,6 +1,10 @@
 import React from 'react';
 
 const ImageCard = ({ image, title, description }) => {
+
+    
+
+
   return (
         <article class="card">
         <img
