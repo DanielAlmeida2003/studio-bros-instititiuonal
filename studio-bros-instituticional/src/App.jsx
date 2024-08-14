@@ -296,53 +296,65 @@ const StudioBrosData = ({ accessToken }) => {
           <h1 id='social' className='pt-[170px] mb-3 text-center font-bold text-4xl sm:text-3xl md:text-4xl lg:text-5xl'>Social Media</h1>
 
 
-            <div className="button-container">
-    
-              <div className="glass-btn purple-btn ">
+            <div className="button-container flex flex-wrap">
+
+              <div className="mt-2">
                 <a target='_blank' href='https://www.instagram.com/studiobros/'>
-                  <FaInstagram  className='imgForSocialMedia text-3xl text-violet-700'></FaInstagram>
+                  <div className="glass-btn purple-btn ">
+                      <FaInstagram  className='imgForSocialMedia text-3xl text-violet-700'></FaInstagram>
+                  </div>
                 </a>
-                
               </div>
 
-              <div className="glass-btn red-btn">
+              <div className="mt-2">
                 <a target='_blank' href='https://www.youtube.com/@studiobros'>
-                  <FaYoutube  className='imgForSocialMedia text-3xl text-red-500'></FaYoutube>
-                </a>
-              </div>
-              
-
-              <div className="glass-btn blue-btn">
-                <a target='_blank' href='https://www.youtube.com/@studiobros'>
-                  <FaFacebook  className='imgForSocialMedia text-3xl text-blue-700'></FaFacebook>
+                  <div className="glass-btn red-btn">
+                      <FaYoutube  className='imgForSocialMedia text-3xl text-red-500'></FaYoutube>
+                  </div>
                 </a>
               </div>
 
-              <div className="glass-btn green-btn">
-                <a target='_blank' href='https://www.youtube.com/@studiobros'>
-                  <FaSpotify  className='imgForSocialMedia text-3xl text-green-500'></FaSpotify>
+              <div className="mt-2">
+                <a target='_blank' href='https://www.facebook.com/studiobrosofficial/?locale=pt_PT'>
+                  <div className="glass-btn blue-btn">
+                      <FaFacebook  className='imgForSocialMedia text-3xl text-blue-700'></FaFacebook>
+                  </div>
                 </a>
               </div>
 
-              <div className="glass-btn red-btn">
+              <div className="mt-2">
+                <a target='_blank' href='https://open.spotify.com/artist/5TGycVupaB4WmtdWZNC2b3?si=9TqSYzfqSCWk91iF1KtmoA'>
+                              <div className="glass-btn green-btn">
+                                  <FaSpotify  className='imgForSocialMedia text-3xl text-green-500'></FaSpotify>
+                              </div>
+                </a>
+              </div>
+
+              <div className="mt-2">
                 <a target='_blank' href='https://music.apple.com/pt/artist/studio-bros/1354469914'>
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Apple_Music_icon.svg/2048px-Apple_Music_icon.svg.png" alt="soundcloud" className='imgForSocialMediaForAppleMusic'/>
+                  <div className="glass-btn red-btn">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Apple_Music_icon.svg/2048px-Apple_Music_icon.svg.png" alt="soundcloud" className='imgForSocialMediaForAppleMusic'/>
+                  </div>
                 </a>
               </div>
 
-              <div className="glass-btn amber-btn">
+              <div className="mt-2"> 
                 <a target='_blank' href='https://soundcloud.com/studiobrosofficial'>
-                  <img src="https://i.postimg.cc/tgQ1H1Rp/soundcloud.png" alt="soundcloud" className='imgForSocialMedia'/>
+                  <div className="glass-btn amber-btn">
+                    
+                      <img src="https://i.postimg.cc/tgQ1H1Rp/soundcloud.png" alt="soundcloud" className='imgForSocialMedia'/>
+                  
+                  </div>
                 </a>
               </div>
 
-              <div className="glass-btn black-btn">
+              <div className="mt-2">
                 <a target='_blank' href='https://www.deezer.com/pt/artist/14382037'>
-                  <FaDeezer className='imgForSocialMedia text-3xl '></FaDeezer>
+                  <div className="glass-btn black-btn">
+                      <FaDeezer className='imgForSocialMedia text-3xl '></FaDeezer>
+                  </div>
                 </a>
               </div>
-
-
 
             </div>
 

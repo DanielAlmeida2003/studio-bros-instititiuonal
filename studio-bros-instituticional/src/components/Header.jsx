@@ -72,7 +72,7 @@ export default function Header() {
           <a href="#music" className="text-sm font-semibold leading-6 text-white">
             Music
           </a>
-          <a href="#videos" className="text-sm font-semibold leading-6 text-white">
+          <a href="#video" className="text-sm font-semibold leading-6 text-white">
             Videos
           </a>
           <a href="#social" className="text-sm font-semibold leading-6 text-white">
@@ -133,7 +133,7 @@ export default function Header() {
                     </a>
                     <a
                       onClick={() => setMobileMenuOpen(false)}
-                      href="#video"
+                      href="#videos"
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       Videos
