@@ -8,13 +8,11 @@ import backgroundVideo from "./video/StudioBrosBackgroundVideo.mp4";
 
 import { getAccessToken } from './service/spotifyCallBacks.js';
 
-import AlbumFetch from './fetch/Albums.js';
-import AlbumService from './service/albumsService.js';
+import { dataAlbums } from './data/albums.js';
+import { dataVideos } from './data/videos.js';
 
 import { FaSpotify, FaYoutube, FaInstagram, FaTwitter, FaDeezer, FaFacebook } from "react-icons/fa";
-import { artistId } from './service/apiLink.js';
-import YoutubeService from './service/youtube-callback.js';
-import VideoFetch from './fetch/Videos.js';
+
 
 import Footer from './components/Footer.jsx';
 
@@ -55,80 +53,11 @@ const StudioBrosData = ({ accessToken }) => {
   const videoRef = useRef(null);
 
   useEffect(() => {
-    const abortController = new AbortController();
-    const signal = abortController.signal;
 
-    const albumsService = new AlbumService(AlbumFetch);
-    const videosService = new YoutubeService(VideoFetch);
-
-    const fetchSpotifyAlbums = async () => {
-      try {
-        const albumsWithCovers = await albumsService.fetchAlbumsWithCoverImages(artistId, accessToken, { signal });
-        
-        console.log(albumsWithCovers);
-
-        setAlbums(albumsWithCovers);
-      } catch (error) {
-        if (error.name !== 'AbortError') {
-          console.log(error);
-        }
-      }
-    };
-
-    const fetchYoutubeVideos = async () => {
-      try {
-
-        const youtube = await videosService.fetchVideosFromChannel({ signal });
-
-        setVideos(youtube.data);
-
-      } catch (error) {
-        if (error.name !== 'AbortError') {
-          console.log(error);
-        }
-      }
-    };
-
-    if (videoRef.current) {
-      videoRef.current.muted = true;
-      videoRef.current.play();
-    }
-
-    fetchSpotifyAlbums();
-    fetchYoutubeVideos();
+    setAlbums(dataAlbums);
+    setVideos(dataVideos);
 
 
-
-    // When the gallery button is clicked
-    document.getElementById("btn-show-music")?.addEventListener("click", function(event) {
-  
-      // Prevent default behavior
-      event.preventDefault();
-  
-      // Get all hidden images
-      const hiddenImages = Array.from(document.querySelectorAll(".cardMusic")).filter(img => img.classList.contains("hidden") === true);
-  
-      // Show the next four hidden images
-      hiddenImages.slice(0, 4).forEach(img => {
-          img.classList.remove("hidden");
-          let opacity = 0;
-          const fadeIn = setInterval(() => {
-          if (opacity >= 1) clearInterval(fadeIn);
-          img.style.opacity = opacity;
-          opacity += 0.1;
-          }, 80);
-      });
-  
-      // If the length of hiddenImages is 4, hide the button
-      if (hiddenImages.length <= 4) {
-          this.style.display = "none";
-      }
-    });
-    
-
-    return () => {
-      abortController.abort();
-    };
   }, [accessToken]);
 
   const handleShowMore = () => {
